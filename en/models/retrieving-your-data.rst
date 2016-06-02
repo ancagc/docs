@@ -656,7 +656,7 @@ findAllBy
 +------------------------------------------------------------------------------------------+------------------------------------------------------------+
 | ``$this->User->findAllByUsernameAndPassword('jhon', '123');``                            | ``User.username = 'jhon' AND User.password = '123';``      |
 +------------------------------------------------------------------------------------------+------------------------------------------------------------+
-| ``$this->User->findAllByLastName('psychic', array(), array('User.user_name => 'asc'));`` | ``User.last_name = 'psychic' ORDER BY User.user_name ASC`` |
+| ``$this->User->findAllByLastName('psychic', array(), array('User.user_name' => 'asc'));`` | ``User.last_name = 'psychic' ORDER BY User.user_name ASC`` |
 +------------------------------------------------------------------------------------------+------------------------------------------------------------+
 
 The returned result is an array formatted just as it would be from ``find('all')``.
